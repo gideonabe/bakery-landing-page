@@ -11,7 +11,7 @@ const Packages = () => {
       name: "Red Velvet Delight",
       description: "Classic red velvet cake with cream cheese frosting and berry garnish",
       price: "$45",
-      image: "https://images.unsplash.com/photo-1586985289688-ca3cfcd6a2e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://www.simplytrinicooking.com/wp-content/uploads/red-velvet-cake.jpg.webp"
     },
     {
       name: "Chocolate Truffle Tower",
@@ -35,23 +35,25 @@ const Packages = () => {
       name: "Artisan Croissants",
       description: "Buttery, flaky croissants baked fresh daily - pack of 6",
       price: "$18",
-      image: "https://images.unsplash.com/photo-1549903072-7e6e0bedb7fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      // image: "https://images.unsplash.com/photo-1549903072-7e6e0bedb7fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://images.ctfassets.net/uexfe9h31g3m/4P9VPYGG5Qg8Am9CDKSHO1/e6271c64235fea35e2133d7ec4440553/Air_Fryer_Croissant_1024x768.jpg?w=768&h=512&fm=webp&fit=thumb&q=90"
     },
     {
       name: "Birthday Celebration",
       description: "Colorful birthday cake with custom message and fun decorations",
       price: "$55",
-      image: "https://images.unsplash.com/photo-1517427294546-5aa121f68e8a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://images.squarespace-cdn.com/content/v1/5d7e54dc2377f72a157751c6/1707838416676-ATU608K2UULF4EOJXT2L/1D93D654-DB68-4EE5-A8B6-744ECC4F734C?format=2500w"
     },
     {
       name: "Artisan Ice Cream",
       description: "Handcrafted vanilla bean ice cream - 1 pint container",
       price: "$12",
-      image: "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      // image: "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://c4.wallpaperflare.com/wallpaper/946/557/290/ice-cream-food-colorful-wallpaper-preview.jpg"
     },
     {
-      name: "French Macarons",
-      description: "Delicate almond macarons in assorted flavors - box of 12",
+      name: "French Cookies",
+      description: "Delicate french cookies in assorted flavors - box of 12",
       price: "$24",
       image: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },

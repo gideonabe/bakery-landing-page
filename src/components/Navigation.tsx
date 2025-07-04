@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -8,7 +7,7 @@ const Navigation = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      setIsScrolled(window.scrollY > 700);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -23,6 +22,8 @@ const Navigation = () => {
     }
   };
 
+  const textColor = isScrolled ? 'text-black' : 'text-white';
+
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled ? 'glass shadow-lg' : 'bg-transparent'
@@ -34,24 +35,24 @@ const Navigation = () => {
             <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">S</span>
             </div>
-            <span className="text-xl font-bold text-foreground">Sweet Delights</span>
+            <span className="bg-gradient-to-r from-[hsl(43, 74%, 42%)] via-white to-[hsl(43, 74%, 42%)] bg-clip-text text-transparent text-xl font-bold">Sweet Delights</span>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <button onClick={() => scrollToSection('hero')} className="text-foreground hover:text-primary transition-colors">
+          <div className={`hidden md:flex items-center space-x-8 glass rounded-lg p-4 ${textColor}`}>
+            <button onClick={() => scrollToSection('hero')} className={`hover:text-primary transition-colors ${textColor}`}>
               Home
             </button>
-            <button onClick={() => scrollToSection('about')} className="text-foreground hover:text-primary transition-colors">
+            <button onClick={() => scrollToSection('about')} className={`hover:text-primary transition-colors ${textColor}`}>
               About Us
             </button>
-            <button onClick={() => scrollToSection('services')} className="text-foreground hover:text-primary transition-colors">
+            <button onClick={() => scrollToSection('services')} className={`hover:text-primary transition-colors ${textColor}`}>
               Services
             </button>
-            <button onClick={() => scrollToSection('packages')} className="text-foreground hover:text-primary transition-colors">
+            <button onClick={() => scrollToSection('packages')} className={`hover:text-primary transition-colors ${textColor}`}>
               Packages
             </button>
-            <button onClick={() => scrollToSection('contact')} className="text-foreground hover:text-primary transition-colors">
+            <button onClick={() => scrollToSection('contact')} className={`hover:text-primary transition-colors ${textColor}`}>
               Contact
             </button>
           </div>
@@ -59,7 +60,7 @@ const Navigation = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden text-foreground hover:text-primary transition-colors"
+            className={`md:hidden transition-colors ${textColor}`}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -69,19 +70,19 @@ const Navigation = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 glass rounded-lg p-4">
             <div className="flex flex-col space-y-4">
-              <button onClick={() => scrollToSection('hero')} className="text-left text-foreground hover:text-primary transition-colors">
+              <button onClick={() => scrollToSection('hero')} className={`text-left hover:text-primary transition-colors ${textColor}`}>
                 Home
               </button>
-              <button onClick={() => scrollToSection('about')} className="text-left text-foreground hover:text-primary transition-colors">
+              <button onClick={() => scrollToSection('about')} className={`text-left hover:text-primary transition-colors ${textColor}`}>
                 About Us
               </button>
-              <button onClick={() => scrollToSection('services')} className="text-left text-foreground hover:text-primary transition-colors">
+              <button onClick={() => scrollToSection('services')} className={`text-left hover:text-primary transition-colors ${textColor}`}>
                 Services
               </button>
-              <button onClick={() => scrollToSection('packages')} className="text-left text-foreground hover:text-primary transition-colors">
+              <button onClick={() => scrollToSection('packages')} className={`text-left hover:text-primary transition-colors ${textColor}`}>
                 Packages
               </button>
-              <button onClick={() => scrollToSection('contact')} className="text-left text-foreground hover:text-primary transition-colors">
+              <button onClick={() => scrollToSection('contact')} className={`text-left hover:text-primary transition-colors ${textColor}`}>
                 Contact
               </button>
             </div>

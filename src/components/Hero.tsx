@@ -5,8 +5,10 @@ const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
   const images = [
+    'https://w0.peakpx.com/wallpaper/936/451/HD-wallpaper-food-dessert-pastry-still-life.jpg',
     'https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80', // Cupcakes
     'https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80', // Cake
+    'https://tropolite.com/media/blogs/blog_cake_2000x_uX9ADuz.webp',
     'https://images.unsplash.com/photo-1549903072-7e6e0bedb7fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80', // Croissants
     'https://images.unsplash.com/photo-1517427294546-5aa121f68e8a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80', // Birthday cake
   ];
