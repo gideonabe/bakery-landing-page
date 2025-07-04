@@ -40,6 +40,8 @@ const Footer = () => {
     }
   ];
 
+  const year = new Date().getFullYear();
+
   return (
     <footer className="bg-warm-brown text-cream py-16">
       <div className="container mx-auto px-6">
@@ -145,7 +147,7 @@ const Footer = () => {
         <div className="border-t border-cream/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-cream/60 text-sm">
-              © 2024 Sweet Delights Bakery. All rights reserved.
+              © {year} Sweet Delights Bakery. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
               <a href="#" className="text-cream/60 hover:text-cream transition-colors">Privacy Policy</a>
