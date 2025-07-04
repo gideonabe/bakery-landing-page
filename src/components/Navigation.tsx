@@ -35,7 +35,7 @@ const Navigation = () => {
             <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">S</span>
             </div>
-            <span className="bg-gradient-to-r from-[hsl(43, 74%, 42%)] via-white to-[hsl(43, 74%, 42%)] bg-clip-text text-transparent text-xl font-bold">Sweet Delights</span>
+            <span className="bg-gradient-to-r from-[hsl(hsl(25, 70%, 40%)] to-[hsl(25, 70%, 40%)] bg-golden bg-clip-text text-transparent text-xl font-bold">Sweet Delights</span>
           </div>
 
           {/* Desktop Navigation */}
