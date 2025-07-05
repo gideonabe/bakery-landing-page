@@ -31,7 +31,7 @@ const Navigation = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <div onClick={() => scrollToSection('hero')} className=" md:cursor-pointer flex items-center space-x-2">
             <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">S</span>
             </div>
@@ -43,11 +43,11 @@ const Navigation = () => {
             <button onClick={() => scrollToSection('hero')} className={`hover:text-primary transition-colors ${textColor}`}>
               Home
             </button>
-            <button onClick={() => scrollToSection('about')} className={`hover:text-primary transition-colors ${textColor}`}>
-              About Us
-            </button>
             <button onClick={() => scrollToSection('services')} className={`hover:text-primary transition-colors ${textColor}`}>
               Services
+            </button>
+            <button onClick={() => scrollToSection('about')} className={`hover:text-primary transition-colors ${textColor}`}>
+              About Us
             </button>
             <button onClick={() => scrollToSection('packages')} className={`hover:text-primary transition-colors ${textColor}`}>
               Packages
@@ -68,7 +68,7 @@ const Navigation = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 glass rounded-lg p-4">
+          <div className="md:hidden absolute top-full left-0 right-0 w-full bg-white glass p-6 z-40">
             <div className="flex flex-col space-y-4">
               <button onClick={() => scrollToSection('hero')} className={`text-left hover:text-primary transition-colors ${textColor}`}>
                 Home
